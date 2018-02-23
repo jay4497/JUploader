@@ -1,4 +1,4 @@
-.sdy-uploader-overlay{
+.j-uploader-overlay{
     background-color: gray;
     position: fixed;
     top: 0;
@@ -8,17 +8,17 @@
     opacity: 1;
     overflow-y: auto;
 }
-.sdy-uploader-buttons, .sdy-uploader-modal{
+.j-uploader-buttons, .j-uploader-modal{
     margin: 0 auto;
 }
-.sdy-uploader-modal{
+.j-uploader-modal{
     margin-top: 120px;
     width: 476px;
 }
-.sdy-uploader-file-item{
+.j-uploader-file-item{
     position: relative;
 }
-.sdy-uploader-file-item .sdy-uploader-file-status{
+.j-uploader-file-item .j-uploader-file-status{
     position: absolute;
     top: 0;
     left: 0;
@@ -29,10 +29,10 @@
     opacity: 0.7;
     color: white;
 }
-.sdy-uploader-preview{
+.j-uploader-preview{
     margin-top: 15px;
 }
-.sdy-uploader-preview .thumbnail{
+.j-uploader-preview .thumbnail{
     overflow: hidden;
 }
 .panel-footer button{
