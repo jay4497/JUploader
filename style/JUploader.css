@@ -1,0 +1,40 @@
+.sdy-uploader-overlay{
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    overflow-y: auto;
+}
+.sdy-uploader-buttons, .sdy-uploader-modal{
+    margin: 0 auto;
+}
+.sdy-uploader-modal{
+    margin-top: 120px;
+    width: 476px;
+}
+.sdy-uploader-file-item{
+    position: relative;
+}
+.sdy-uploader-file-item .sdy-uploader-file-status{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3px 0;
+    text-align: center;
+    background-color: gray;
+    opacity: 0.7;
+    color: white;
+}
+.sdy-uploader-preview{
+    margin-top: 15px;
+}
+.sdy-uploader-preview .thumbnail{
+    overflow: hidden;
+}
+.panel-footer button{
+    margin-left: 15px;
+}

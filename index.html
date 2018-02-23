@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test uploader</title>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="style/webuploader.css" rel="stylesheet">
+<link href="style/JUploader.css" rel="stylesheet">
+</head>
+
+<body>
+<input type="text" name="thumbnail01" id="images01">
+<button onclick="upload01();">upload</button>
+<input type="text" name="thumbnail02" id="images02">
+<button onclick="upload02();">upload</button>
+<script src="https://cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+<script src="js/webuploader.min.js"></script>
+<script src="js/JUploader.js"></script>
+<script>
+function upload01(){
+    JUploader.init({
+        'origin_input': '#images01',
+        'url': 'upload.php'
+    });
+}
+function upload02(){
+    JUploader.init({
+        'origin_input': '#images02',
+        'url': 'upload.php'
+    });
+}
+</script>
+</body>
+</html>
