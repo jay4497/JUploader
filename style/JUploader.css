@@ -32,6 +32,11 @@
 .j-uploader-preview{
     margin-top: 15px;
 }
+.j-uploader-preview:after{
+	content: ' ';
+	display: block;
+	clear: both;
+}
 .j-uploader-preview .thumbnail{
     overflow: hidden;
 }

@@ -1,3 +1,11 @@
+String.prototype.rtrim = function (c) {
+    if (!c) {
+        c = ' ';
+    }
+    var reg = new RegExp('([' + c + ']*$)', 'gi');
+    return this.replace(reg, '');
+}
+
 var JUploader = {
     settings: {
         'origin_input': '#thumbnail',
@@ -119,7 +127,9 @@ var JUploader = {
         });
 
         modal_footer.find('#j-uploader-complete').on('click', function(){
-            $(options.origin_input).val($('#j-uploader-input').val());
+            var result = $('#j-uploader-input').val();
+            result = result.rtrim(',');
+            $(options.origin_input).val(result);
             $('.j-uploader-overlay').fadeOut('fast', function(){
                 $('.j-uploader-overlay').remove();
             });
